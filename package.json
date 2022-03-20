@@ -1,0 +1,9 @@
+{
+  "name": "nne",
+  "version": "0.0.1",
+  "description": "nne",
+  "main": "index.js",
+  "author": "ky-hy",
+  "license": "MIT",
+  "private": false
+}

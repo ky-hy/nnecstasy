@@ -4,16 +4,16 @@ services:
     build: .
     tty: true
     volumes:
-      - ./:/app
+      - ./nne:/app
     ports:
-      - 0.0.0.0:3000:3000
+      - 58898:58898
+      - 8000:8000
     entrypoint: >
       sleep 80000
-    # yarn create frourio-app --host 0.0.0.0
   postgres:
     image: postgres:13.6-alpine
     restart: always
     environment:
-      POSTGRES_PASSWORD: sample
-    ports:
-      - 127.0.0.1:5432:5432
+      POSTGRES_PASSWORD: 0b0EqW01EfjRypXe
+      # コンテナ作成時に作成するDBを設定
+      POSTGRES_DB: nne

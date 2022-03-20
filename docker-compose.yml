@@ -14,6 +14,6 @@ services:
     image: postgres:13.6-alpine
     restart: always
     environment:
-      POSTGRES_PASSWORD: 0b0EqW01EfjRypXe
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       # コンテナ作成時に作成するDBを設定
-      POSTGRES_DB: nne
+      POSTGRES_DB: ${POSTGRES_DB}
